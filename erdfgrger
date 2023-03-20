@@ -1,0 +1,104 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Metrofyy Roblox Cheat",
+   LoadingTitle = "Metrofyy Roblox Cheat",
+   LoadingSubtitle = "by Metrofyy",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Metrofyy cheat"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "9eNCcQAKPs", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Metrofyy Roblox Cheat",
+      Subtitle = "Key Input",
+      Note = "Cheat is in development",
+      FileName = "Metrofyykey",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "testcheat"
+   }
+})
+
+
+-- Updates
+
+local Tab = Window:CreateTab("Announcements", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Recent update!")
+local Paragraph = Tab:CreateParagraph({Title = "Update 0.0.1", Content = "+ new key system, + new esp."})
+local Paragraph = Tab:CreateParagraph({Title = "Update 0.0.2", Content = "+ new key, + N"})
+
+-- aimbot settings
+
+local Tab = Window:CreateTab("Aimbot", 4483362458) -- Title, Image
+local Toggle = Tab:CreateToggle({
+   Name = "Enable Aimbot",
+   CurrentValue = false,
+   Flag = "Aimbot", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/metrofyy/rgrg/main/5gtrgegerg"))()
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+local Toggle = Tab:CreateToggle({
+    Name = "Enable SIlent aim",
+    CurrentValue = false,
+    Flag = "Silent Aim", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/metrofyy/rgeghergerh/main/gtgtetge"))()
+    -- The variable (Value) is a boolean on whether the toggle is true or false
+    end,
+ })
+
+-- ESP
+
+ local Tab = Window:CreateTab("ESP", 4483362458) -- Title, Image
+local Toggle = Tab:CreateToggle({
+   Name = "Esp",
+   CurrentValue = false,
+   Flag = "ESP", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+    loadstring(game:HttpGet("https://pastebin.com/JEW6XJ6j"))()
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+-- Misc
+
+local Tab = Window:CreateTab("Misc", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Join Discord",
+   Callback = function()
+      loadstring(game:HttpGet("https://discord.gg/9eNCcQAKPs"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Upgrade to premium menu",
+   Callback = function()
+      loadstring(game:HttpGet("https://discord.gg/9eNCcQAKPs"))()
+   end,
+})
+
+
+local Button = Tab:CreateButton({
+   Name = "CLICK ME FOR THE BEST CHEAT SERVER",
+   Callback = function()
+      loadstring(game:HttpGet("https://discord.gg/9eNCcQAKPs"))()
+   end,
+})
+
+-- Premium Members
+
+local Tab = Window:CreateTab("Premium Menu", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Premium Members")
+local Paragraph = Tab:CreateParagraph({Title = "Members", Content = "Metrofyy#0610"})
+
+Rayfield:LoadConfiguration()
